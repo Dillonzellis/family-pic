@@ -6,8 +6,9 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="py-4 flex justify-between">
+        <div className="text-2xl font-semibold">Family Pic</div>
         <UserButton />
       </div>
       <div>{children}</div>
