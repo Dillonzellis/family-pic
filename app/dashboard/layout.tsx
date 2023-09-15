@@ -1,3 +1,4 @@
+import { UserSideBar } from "@/components/dash/UserSideBar";
 import { UserButton } from "@clerk/nextjs";
 
 export default function DashboardLayout({
@@ -6,12 +7,12 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="container">
-      <div className="py-4 flex justify-between">
-        <div className="text-2xl font-semibold">Family Pic</div>
-        <UserButton />
+    <div className="grid grid-cols-4">
+      <div className="col-span-1 border-r-2">
+        <UserSideBar />
       </div>
-      <div>{children}</div>
+
+      <div className="col-span-3">{children}</div>
     </div>
   );
 }

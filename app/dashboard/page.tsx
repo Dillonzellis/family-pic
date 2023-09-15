@@ -5,8 +5,7 @@ const Dashboard = async () => {
 
   return (
     <div className="space-y-4">
-      <div>Dashboard page</div>
-      <div>Hello {user?.firstName}</div>
+      <div className="text-center">{user?.firstName}'s Page</div>
     </div>
   );
 };
